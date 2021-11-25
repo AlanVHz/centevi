@@ -1,10 +1,10 @@
 @import "../../scss/variables";
 
 .half-side-container {
-    display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
+    padding: 50px;
 }
 
 #right-side {
@@ -15,4 +15,50 @@
     background-color: $primary-color;
     color: white;
     font-weight: 100;
+    font-size: 14px;
+}
+
+.form-control {
+    border-bottom: 1px solid $border-bottom;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    transition: border-color 0.2s ease-in-out 0s;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: $primary-color;
+}
+
+#form-container {
+    width: 100%;
+}
+
+#username-icon {
+    width: 33px;
+    height: 30px;
+    margin: 0px 10px;
+}
+
+#password-icon {
+    width: 30px;
+    height: 25px;
+    margin: 0px 10px;
+}
+
+#show-password-switch {
+    cursor: pointer;
+}
+
+#logo-container {
+    height: 100%;
+}
+
+@media all and (min-width: 1300px) {
+    #form-container {
+        width: 70%;
+    }
 }

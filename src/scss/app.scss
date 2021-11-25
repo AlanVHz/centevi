@@ -5,3 +5,17 @@
     margin: 0px;
     overflow: hidden;
 }
+
+.form-check-input:checked {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
