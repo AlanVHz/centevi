@@ -8,21 +8,21 @@ export const Login = (props) => {
                 <div className="col">
                     <div className="half-side-container d-flex flex-column" id="left-side">
                         <div id="form-container" className="d-flex flex-column justify-content-center">
-                            <h1 className="py-5 text-center">Ingresa a <a id="name-link" href="">Centro de Optica</a></h1>
+                            <h1 className="py-5 text-center">Ingresa a <a id="name-link" href="www.google.com">Centro de Optica</a></h1>
                             <div className="mb-4 d-flex align-items-center">
-                                <img id="username-icon" src="/img/user.png" />
+                                <img id="username-icon" src="/img/user.png" alt=""/>
                                 <input type="email" className="form-control" id="username-input" placeholder="Usuario" />
                             </div>
                             <div className="mb-4 d-flex align-items-center">
-                                <img id="password-icon" src="/img/password.png" />
+                                <img id="password-icon" src="/img/password.png" alt=""/>
                                 <input type="password" className="form-control" id="password-input" placeholder="Contraseña" />
                             </div>
                             <div className="mb-4 p-2 d-flex align-items-center justify-content-between">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" role="switch" id="show-password-switch" />
-                                <label class="form-check-label" for="flexSwitchCheckDefault">Mostrar contraseña</label>
+                            <div className="form-check form-switch">
+                                <input className="form-check-input" type="checkbox" role="switch" id="show-password-switch" />
+                                <label className="form-check-label">Mostrar contraseña</label>
                             </div>
-                                <button type="button" class="btn" id="login-btn">Ingresar</button>
+                                <button type="button" className="btn" id="login-btn">Ingresar</button>
                             </div>
                         </div>
                     </div>

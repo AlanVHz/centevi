@@ -1,0 +1,38 @@
+@import "../../scss/variables";
+   
+
+h3 {
+    height: 50px;
+}
+
+#chart-container {
+    flex-basis: 30%;
+}
+
+#table-container {
+    flex-basis: 70%;
+}
+
+.dashboard-data-value {
+    font-weight: bold;
+    font-size: 24px;
+    color: #515365;
+}
+
+.dashboard-data-name {
+    font-weight: bold;
+    font-size: 12px;
+    color: #506690;
+}
+
+#dashboard-data {
+
+    p {
+        margin: 0px;
+    }
+
+    img {
+        height: 40px;
+        padding: 0px 15px;
+    }
+}
