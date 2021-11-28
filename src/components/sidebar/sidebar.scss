@@ -1,0 +1,27 @@
+@import "../../scss/variables";
+
+.sidebar {
+    width: 14rem;
+    height: 100vh;
+    border-right: 1px solid $secondary-color;
+    background-color: #e0f0ef;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    li {
+        border-bottom: 1px solid $secondary-color;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out 0s;
+    }
+
+    li:hover {
+        background-color: $primary-color;
+
+        a{
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../scss/variables";
+
+.navbar {
+    background-color: #e0f0ef;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $secondary-color;
+}
+
+svg {
+    font-size: 20px;
+    color: $primary-color;
+}
