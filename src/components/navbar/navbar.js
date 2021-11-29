@@ -11,7 +11,7 @@ export const Navbar = (props) => {
         <nav className="navbar">
             <div className="container-fluid">
                 <span className="navbar-brand mb-0 h1">My Awesome Project</span>
-                <a onClick={() => navigate("/login")}><FiLogOut /></a>
+                <button className="btn btn-link" onClick={() => navigate("/login")}><FiLogOut /></button>
             </div>
         </nav>
     )

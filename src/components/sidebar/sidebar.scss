@@ -15,6 +15,11 @@
         border-bottom: 1px solid $secondary-color;
         cursor: pointer;
         transition: all 0.2s ease-in-out 0s;
+
+        a {
+            width: 100%;
+            display: block;
+        }
     }
 
     li:hover {

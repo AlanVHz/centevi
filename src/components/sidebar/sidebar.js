@@ -5,8 +5,8 @@ export const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul>
-                <li className="text-center py-3 text-bold"><Link to="/dashboard">Dashboard</Link></li>
-                <li className="text-center py-3 text-bold"><Link to="/billing">Billing</Link></li>
+                <li className="text-center text-bold"><Link className="py-3" to="/dashboard">Dashboard</Link></li>
+                <li className="text-center text-bold"><Link className="py-3" to="/billing">Billing</Link></li>
             </ul>
         </div>
     )

@@ -13,6 +13,11 @@ body {
     background-color: #f1f2f7;
 }
 
+.container {
+    @extend .animated;
+    @extend .fadeIn;
+}
+
 .form-check-input:checked {
     background-color: $primary-color;
     border-color: $primary-color;
@@ -43,4 +48,32 @@ a {
 
 .text-bold {
     font-weight: 600;
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+.fadeIn {
+    animation-name: fadeIn;
 }

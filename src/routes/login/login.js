@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./styles.scss";
 import { useNavigate } from "react-router-dom";
 
 export const Login = (props) => {
+    
     let navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false)
+
+    let showPasswordToggle = (event) => {
+        setShowPassword(!showPassword)
+    }
 
     return (
         <div className="container-fluid p-0">
@@ -11,18 +17,18 @@ export const Login = (props) => {
                 <div className="col p-0">
                     <div className="half-side-container d-flex flex-column" id="left-side">
                         <div id="form-container" className="d-flex flex-column justify-content-center">
-                            <h1 className="py-5 text-center">Ingresa a <a id="name-link" href="www.google.com">Centro de Optica</a></h1>
+                            <h1 className="py-5 text-center">Ingresa a <a id="name-link" rel="noreferrer" target="_blank" href="https://www.google.com">Centro de Optica</a></h1>
                             <div className="mb-4 d-flex align-items-center">
                                 <img id="username-icon" src="/img/user.png" alt="" />
                                 <input type="email" className="form-control" id="username-input" placeholder="Usuario" />
                             </div>
                             <div className="mb-4 d-flex align-items-center">
                                 <img id="password-icon" src="/img/password.png" alt="" />
-                                <input type="password" className="form-control" id="password-input" placeholder="Contraseña" />
+                                <input type={ showPassword ? "text" :"password" } className="form-control" id="password-input" placeholder="Contraseña" />
                             </div>
                             <div className="mb-4 p-2 d-flex align-items-center justify-content-between">
                                 <div className="form-check form-switch">
-                                    <input className="form-check-input" type="checkbox" role="switch" id="show-password-switch" />
+                                    <input className="form-check-input" checked={showPassword} onChange={showPasswordToggle} type="checkbox" role="switch" id="show-password-switch" />
                                     <label className="form-check-label">Mostrar contraseña</label>
                                 </div>
                                 <button type="button" className="btn" onClick={() => navigate('/dashboard')} id="login-btn">Ingresar</button>
